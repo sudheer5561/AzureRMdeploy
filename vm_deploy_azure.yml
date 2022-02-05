@@ -1,14 +1,14 @@
 ---
 # Create or update a template deployment based on uris using parameter and template links
 
-- name: Create Azure Gallery
+- name: Create Azure VM
   hosts: localhost
   connection: local
 
   azure_rm_deployment:
     resource_group: AZUREDEVOPSDEMO
     name: VMDeployment
-    template_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/ImageGallery-template.json'
-    parameters_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/ImageGallery-parameters.json'
+    template_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.json'
+    parameters_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.parameters.json'
 
 ...
