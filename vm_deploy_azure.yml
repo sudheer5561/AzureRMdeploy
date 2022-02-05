@@ -1,14 +1,14 @@
 ---
 # Create or update a template deployment based on uris using parameter and template links
 
-- name: Create Azure VM
-  hosts: localhost
-  connection: local
+- hosts: localhost
+  become_user: awx
 
-  azure_rm_deployment:
-    resource_group: AZUREDEVOPSDEMO
-    name: VMDeployment
-    template_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.json'
-    parameters_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.parameters.json'
+  tasks:
+  - name: Creation VM
+    azure_rm_deployment:
+      resource_group: AZUREDEVOPSDEMO
+      template_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.json'
+      parameters_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.parameters.json'
 
 ...
