@@ -7,7 +7,10 @@
   - name: create an account
     azure_rm_storageaccount:
       resource_group: AZUREDEVOPSDEMO
-      template_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.json'
-      parameters_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.parameters.json'
+      name: clh0002
+      type: Standard_RAGRS
+      tags:
+      testing: testing
+      delete: on-exit
 
 ...
