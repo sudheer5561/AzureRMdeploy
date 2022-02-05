@@ -6,7 +6,7 @@
   tasks:
   - name: Creation VM
     azure_rm_deployment:
-      resource_group: AZUREDEVOPSDEMO1
+      resource_group: AZUREDEVOPSDEMO2
       location: France Central
       template_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.json'
       parameters_link: 'https://github.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.parameters.json'
