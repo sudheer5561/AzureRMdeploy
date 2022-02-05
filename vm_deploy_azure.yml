@@ -2,8 +2,7 @@
 # Create or update a template deployment based on uris using parameter and template links
 
 - hosts: localhost
-  become_user: awx
-
+  
   tasks:
   - name: Creation VM
     azure_rm_deployment:
