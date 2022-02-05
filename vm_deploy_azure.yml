@@ -9,6 +9,6 @@
       resource_group: AZUREDEVOPSDEMO2
       location: France Central
       template_link: 'https://raw.githubusercontent.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.json'
-      parameters_link: 'https://raw.githubusercontent.com/AzureRMdeploy/blob/main/azuredeploy.parameters.json'
+      parameters_link: 'https://raw.githubusercontent.com/sudheer5561/AzureRMdeploy/blob/main/azuredeploy.parameters.json'
 
 ...
